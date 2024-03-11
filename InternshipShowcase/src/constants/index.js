@@ -1,7 +1,13 @@
 export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: "pixelmatchwe",
+      title: "PixelmatchWE",
+      post_link: "/posts/ENDocsPixelmatchWE/",
+    },
+    {
+      id: "cypress",
+      title: "Cypress",
+      post_link: "/posts/CypressDocs/",
     },
   ];
   
