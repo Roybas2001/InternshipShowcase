@@ -1,0 +1,48 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import { StringLiteral } from "typescript";
+import NavBar from "../components/NavBar.astro";
+
+type Props = MarkdownLayoutProps<{
+  // Define frontmatter props here
+  title: string;
+  subtitle: string;
+}>;
+
+const { frontmatter, url } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <header><NavBar /></header>
+    <main>
+    <div
+      class="xl:flex-row flex-col-reverse flex gap-10 overflow-hidden"
+    >
+      <div class="flex-[1] bg-slate-300 p-8">
+        <div class="flex flex-col items-center">
+          <a
+            href="https://webfant.atlassian.net/wiki/spaces/HI/pages/477364225/HIVE"
+            target="_blank"
+          >
+            <img
+              src="https://webelephant.nl/wp-content/uploads/2023/07/Untitled-design-2.svg"
+              width="400"
+              alt="WebElephant Logo"
+            />
+          </a>
+          <p class="text-[#ff0029] text-[36px]">{frontmatter.subtitle}</p>
+        </div>
+        <slot />
+      </div>
+    </div>
+</main>
+  </body>
+</html>
