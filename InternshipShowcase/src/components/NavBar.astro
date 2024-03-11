@@ -1,35 +1,42 @@
 ---
+import { Image } from "astro:assets";
 import { navLinks } from "../constants";
 import NavBarMobile from "./MobileNav.jsx";
-import { ElephantCanvas } from "./canvas";
+import { CornerPrintLeft, CornerPrintRight } from "../assets";
 ---
-<nav class="w-full flex items-center py-5 px-5 fixed top-0 z-20">
+
+<div 
+  class="w-full flex justify-between item-center fixed dark-null-gradiet"
+  style="background: #FFFFFF; background: linear-gradient(90.13deg, #050816 5%, rgba(0, 0, 0, 0) 97.5%); background: -webkit-linear-gradient(-90.13deg, #050816 5%, rgba(0, 0, 0, 0) 97.5%)"  
+>
+  <Image src={CornerPrintLeft} format="svg" alt="" />
+  <Image src={CornerPrintRight} format="svg" alt="" />
+
+  <nav class="w-full flex items-center py-5 px-5 fixed top-0 z-20">
     <div class="w-full flex justify-between items-center max-w-7x1 mx-auto">
+      <!-- Left side of nav -->
+      <a href="/" class="flex items-center gap-2">
+        <p class="text-white text-[18px] font-bold cursor-pointer flex">
+          Internship &nbsp;
+          <span class="sm:block hidden">|&nbsp;Showcase</span>
+        </p>
+      </a>
 
-        <!-- Left side of nav -->
-        <a href="/" class="flex items-center gap-2">
-        <p class="text-white text-[18px] font-bold cursor-pointer flex">Internship &nbsp;
-            <span class="sm:block hidden">|&nbsp;Showcase</span>
-        </p> 
-        <div style="max-width: 20%; max-height: 30px;"><ElephantCanvas client:load /></div>
-        </a>
-        
+      <!-- Right side of nav -->
+      <ul class="list-none lg:flex flex-row gap-10">
+        {
+          navLinks.map((link) => (
+            <li class="hover:text-[#FF0029] text-white text-[18px] font-medium cursor-pointer">
+              <a href={`${link.post_link}`}>{link.title}</a>
+            </li>
+          ))
+        }
+      </ul>
 
-        <!-- Right side of nav -->
-        <ul class="list-none lg:flex flex-row gap-10">
-            {navLinks.map((link) => (
-              <li
-              class="hover:text-[#FF0029] text-white text-[18px] font-medium cursor-pointer">
-                <a href={`${link.post_link}`}>
-                  {link.title}    
-                </a>
-              </li>
-            ))}
-        </ul>
-
-        <!-- Mobile view -->
-        <div class="lg:hidden flex flex-1 justify-end items-center">
-          <!-- <NavBarMobile /> -->
-        </div>
+      <!-- Mobile view -->
+      <div class="lg:hidden flex flex-1 justify-end items-center">
+        <!-- <NavBarMobile /> -->
+      </div>
     </div>
-</nav>
+  </nav>
+</div>
