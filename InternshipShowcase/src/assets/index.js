@@ -1,5 +1,6 @@
 import menu from './menu.svg';
 import close from './close.svg';
-import CornerPrint from "./Corner print.svg";
+import CornerPrintLeft from "./CornerPrintLeft.svg";
+import CornerPrintRight from "./CornerPrintRight.svg";
 
-export { menu, close, CornerPrint };
+export { menu, close, CornerPrintLeft, CornerPrintRight };

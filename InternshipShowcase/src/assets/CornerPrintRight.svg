@@ -1,0 +1,39 @@
+<svg width="75" height="75" viewBox="0 0 153 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="152.5" y="0.5" width="24" height="24" transform="rotate(90 152.5 0.5)" stroke="#F3A42D"/>
+<rect x="127.5" y="25.5" width="24" height="24" transform="rotate(90 127.5 25.5)" stroke="#F3A42D"/>
+<rect x="127.5" y="25.5" width="49" height="49" transform="rotate(90 127.5 25.5)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="25" y2="-0.5" transform="matrix(1 0 0 -1 128 49)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 140 62)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 140 87)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 128 87)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 128 99)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 116 99)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 128 116)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 128 131)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(1 0 0 -1 116 116)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="16" y2="-0.5" transform="matrix(0 -1 -1 0 140 132)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="16" y2="-0.5" transform="matrix(0 -1 -1 0 116 116)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 -1 -1 0 140 100)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 -1 -1 0 128 100)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="13" y2="-0.5" transform="matrix(0 -1 -1 0 152 63)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="25" y2="-0.5" transform="matrix(0 -1 -1 0 152 88)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="25" y2="-0.5" transform="matrix(0 -1 -1 0 140 88)" stroke="#F3A42D"/>
+<line y1="-0.5" x2="53" y2="-0.5" transform="matrix(0 -1 -1 0 128 153)" stroke="#F3A42D"/>
+<line x1="103.5" y1="25" x2="103.5" stroke="#F3A42D"/>
+<line x1="90.5" y1="13" x2="90.5" y2="1" stroke="#F3A42D"/>
+<line x1="65.5" y1="13" x2="65.5" y2="1" stroke="#F3A42D"/>
+<line x1="65.5" y1="25" x2="65.5" y2="13" stroke="#F3A42D"/>
+<line x1="53.5" y1="25" x2="53.5" y2="13" stroke="#F3A42D"/>
+<line x1="53.5" y1="37" x2="53.5" y2="25" stroke="#F3A42D"/>
+<line x1="36.5" y1="25" x2="36.5" y2="13" stroke="#F3A42D"/>
+<line x1="21.5" y1="25" x2="21.5" y2="13" stroke="#F3A42D"/>
+<line x1="36.5" y1="37" x2="36.5" y2="25" stroke="#F3A42D"/>
+<line x1="21" y1="12.5" x2="37" y2="12.5" stroke="#F3A42D"/>
+<line x1="37" y1="36.5" x2="53" y2="36.5" stroke="#F3A42D"/>
+<line x1="53" y1="12.5" x2="65" y2="12.5" stroke="#F3A42D"/>
+<line x1="53" y1="24.5" x2="65" y2="24.5" stroke="#F3A42D"/>
+<line x1="90" y1="0.5" x2="103" y2="0.5" stroke="#F3A42D"/>
+<line x1="65" y1="0.5" x2="90" y2="0.5" stroke="#F3A42D"/>
+<line x1="65" y1="12.5" x2="90" y2="12.5" stroke="#F3A42D"/>
+<line y1="24.5" x2="53" y2="24.5" stroke="#F3A42D"/>
+</svg>

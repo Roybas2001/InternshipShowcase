@@ -17,9 +17,9 @@ const Elephant = (isMobile) => {
             {/* Model */}
             <primitive
             object={elephant.scene}
-            scale={isMobile ? 0.125 : 0.125}
-            position={isMobile ? [0,1.9,0] : [0,0,0]}
-            rotation={[0, 0, .1]}
+            scale={isMobile ? .25 : 0.125}
+            position={isMobile ? [0,0,0] : [0,0,0]}
+            rotation={[0, 0, 0]}
             />
         </mesh>
     )

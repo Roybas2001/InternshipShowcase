@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import { EarthCanvas, ElephantCanvas } from "../components/canvas";
+import { ElephantCanvas } from "../components/canvas";
+import "../styles/global.css";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -40,7 +40,7 @@ import { EarthCanvas, ElephantCanvas } from "../components/canvas";
       />
       <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
     </p>
-    <EarthCanvas client:load />
+    <ElephantCanvas client:load />
     <!-- <ElephantCanvas client:load /> -->
   </main>
 </Layout>
@@ -71,13 +71,7 @@ import { EarthCanvas, ElephantCanvas } from "../components/canvas";
     text-align: center;
     margin-bottom: 1em;
   }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
+
   .instructions {
     margin-bottom: 2rem;
     border: 1px solid rgba(var(--accent-light), 25%);
