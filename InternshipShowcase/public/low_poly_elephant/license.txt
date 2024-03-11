@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Elephant
+* source:	https://sketchfab.com/3d-models/low-poly-elephant-4d16e8e3344f4c7499cf9d2c488e4c9b
+* author:	Maksim Batyrev (https://sketchfab.com/c3posw01)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Elephant" (https://sketchfab.com/3d-models/low-poly-elephant-4d16e8e3344f4c7499cf9d2c488e4c9b) by Maksim Batyrev (https://sketchfab.com/c3posw01) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
