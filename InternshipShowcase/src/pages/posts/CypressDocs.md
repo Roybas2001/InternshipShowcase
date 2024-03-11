@@ -14,7 +14,7 @@ subtitle: 'Cypress usage Documentation'
 <br>
 <h2 align="left" id="requirements" style="color: #ff0029;">Requirements</h2>
 
-`npm install`
+npm install
 ```terminal
 cd /your/project/path
 npm init
