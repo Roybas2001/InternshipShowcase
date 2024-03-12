@@ -171,8 +171,8 @@ try {
 <br>
 So now that we have the new file and we are no longer dependend on the mapbox/pixelmatch package, we need to add the functionality to create an image based on the mismatched pixels from the comparing images.
 
-In the src folder there are 2 files that we change to able to work with our new pixelmatchWE.php file
----
+In the src folder there are 2 files that we change to be able to work with our new pixelmatchWE.php file
+<br>
 
 <h3>Original Pixelmatch file:</h3>
 

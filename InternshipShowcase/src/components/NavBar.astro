@@ -23,7 +23,7 @@ import { CornerPrintLeft, CornerPrintRight } from "../assets";
       </a>
 
       <!-- Right side of nav -->
-      <ul class="list-none lg:flex flex-row gap-10">
+      <ul class="list-none lg:flex hidden flex-row gap-10">
         {
           navLinks.map((link) => (
             <li class="hover:text-[#FF0029] text-white text-[18px] font-medium cursor-pointer">
@@ -35,7 +35,7 @@ import { CornerPrintLeft, CornerPrintRight } from "../assets";
 
       <!-- Mobile view -->
       <div class="lg:hidden flex flex-1 justify-end items-center">
-        <!-- <NavBarMobile /> -->
+        <NavBarMobile client:load/>
       </div>
     </div>
   </nav>
