@@ -5,7 +5,7 @@ import * as random from "../../utils/maath";
 
 const Stars = (props) => {
   const ref = useRef();
-  const sphere = random.inSphereCustom(new Float32Array(5000), { radius: 1.2 });
+  const sphere = random.inSphereCustom(new Float32Array(10000), { radius: 1.1 });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
