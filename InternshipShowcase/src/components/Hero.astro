@@ -1,0 +1,32 @@
+---
+import { ElephantCanvas } from "../components/canvas";
+import "../styles/global.css";
+---
+
+<section class="relative w-full h-screen mx-auto">
+    <div
+      class="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10"
+    >
+      <div class="flex flex-col justify-center items-center mt-5">
+        <div class="w-5 h-5 rounded-full bg-primary"></div>
+        <div class="w-1 sm:h-80 h-40 red-gradient"></div>
+      </div>
+
+      <div>
+        <h1
+          class="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white"
+        >
+          Internship <span class="text-red-gradient">Showcase</span>
+        </h1>
+
+        <p
+          class="text-white-100 mt-2 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]"
+        >
+          Subtext
+        </p>
+      </div>
+    </div>
+
+    <!-- Import 3D Model -->
+    <ElephantCanvas client:load />
+</section>
