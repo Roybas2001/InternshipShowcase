@@ -1,6 +1,6 @@
 ---
 import type { MarkdownLayoutProps } from "astro";
-import NavBar from "../components/NavBar.astro";
+import {NavBar, Footer} from "../components";
 import "../styles/global.css";
 import "../styles/markdown.css"
 
@@ -47,5 +47,6 @@ const { frontmatter, url } = Astro.props;
         </div>
       </div>
     </main>
+    <footer><Footer /></footer>
   </body>
 </html>

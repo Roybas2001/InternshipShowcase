@@ -18,7 +18,7 @@ const Elephant = (isMobile) => {
             <primitive
             object={elephant.scene}
             scale={isMobile ? .25 : 0.125}
-            position={isMobile ? [0,-2,0] : [0,0,0]}
+            position={isMobile ? [0,-1.5,0] : [0,0,0]}
             rotation={[0, 0, 0]}
             />
         </mesh>
@@ -62,7 +62,7 @@ const ElephantCanvas = () => {
         }}>
             <Suspense fallback={<CanvasLoader />}>
               <OrbitControls 
-                autoRotate
+                autoRotate={false}
                 enableZoom={false}
                 maxPolarAngle={Math.PI / 2}
                 minPolarAngle={Math.PI / 2}
