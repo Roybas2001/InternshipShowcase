@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { menu, close } from "../assets";
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 import { navLinks } from "../constants";
 
 const NavBarMobile = () => {

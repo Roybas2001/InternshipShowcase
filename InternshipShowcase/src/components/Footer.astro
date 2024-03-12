@@ -1,0 +1,21 @@
+---
+import { footerLinks } from "../constants";
+import { Image } from "astro:assets";
+---
+<nav class="w-full flex items-center py-5 z-20 bg-black-100 sm:px-16 px-6">
+    <div class="w-full flex justify-between items-center mx-auto">
+        <a href="/" class="flex items-center gap-2">
+            <p class="text-white text-[18px] font-bold cursor-pointer flex">Roy Bastiaansen</p>
+        </a>
+
+        <ul class="list-none hidden sm:flex flex-row gap-10">
+        {footerLinks.map((link) => (
+                <li class="hover:text-white text-[18px] font-medium cursor-pointer">
+                    <a href={`${link.icon_link}`} target="_blank" rel="noreferrer">
+                        <Image src={link.icon} alt={link.title} class="w-[40px] h-[50px] object-contain cursor-pointer" format="png"/>
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</nav>
