@@ -3,14 +3,14 @@ import WebElephantWhite from "../assets/WebElephant_White.svg";
 
 export const navLinks = [
     {
-      id: "pixelmatchwe",
-      title: "PixelmatchWE",
-      post_link: "/posts/ENDocsPixelmatchWE/",
+      id: "about",
+      title: "About",
+      post_link: "#about",
     },
     {
-      id: "cypress",
-      title: "Cypress",
-      post_link: "/posts/CypressDocs/",
+      id: "projects",
+      title: "Projects",
+      post_link: "#projects",
     },
   ];
 
@@ -26,5 +26,20 @@ export const footerLinks = [
     title: 'WebElephant',
     icon: WebElephantWhite,
     icon_link: 'https://www.webelephant.nl/',
+  },
+];
+
+export const projects = [
+  {
+    id: 'pixelmatchwe',
+    title: 'PixelmatchWE',
+    subtitle: 'Comparing images',
+    post_link: '/posts/ENDocsPixelmatchWE/',
+  },
+  {
+    id: "cypress",
+    title: "Cypress",
+    subtitle: "E2E Testing",
+    post_link: "/posts/CypressDocs/",
   },
 ];

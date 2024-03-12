@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import {Hero, About} from "../components";
+import {Hero, About, Projects} from "../components";
 import { StarCanvas } from "../components/canvas";
 ---
 
@@ -12,6 +12,7 @@ import { StarCanvas } from "../components/canvas";
       <About client:load/>
       <StarCanvas client:load/>
     </div>
+    <Projects />
   </main>
 </Layout>
 <style>
