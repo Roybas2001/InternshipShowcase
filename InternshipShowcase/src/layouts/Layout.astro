@@ -1,5 +1,5 @@
 ---
-import NavBar from "../components/NavBar.astro";
+import { NavBar, Footer } from "../components";
 import "../styles/global.css";
 
 interface Props {
@@ -22,6 +22,7 @@ const { title } = Astro.props;
   <body>
     <header><NavBar /></header>
     <slot />
+    <footer><Footer /></footer>
   </body>
 </html>
 <style is:global>
