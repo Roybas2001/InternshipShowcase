@@ -5,10 +5,7 @@ import NavBarMobile from "./MobileNav.jsx";
 import { CornerPrintLeft, CornerPrintRight } from "../assets";
 ---
 
-<div 
-  class="w-full flex justify-between item-center fixed dark-null-gradiet"
-  style="background: #FFFFFF; background: linear-gradient(90.13deg, #050816 5%, rgba(0, 0, 0, 0) 97.5%); background: -webkit-linear-gradient(-90.13deg, #050816 5%, rgba(0, 0, 0, 0) 97.5%)"  
->
+<div class="w-full flex justify-between fixed dark-null-gradient">
   <Image src={CornerPrintLeft} format="svg" alt="" />
   <Image src={CornerPrintRight} format="svg" alt="" />
 
@@ -35,7 +32,7 @@ import { CornerPrintLeft, CornerPrintRight } from "../assets";
 
       <!-- Mobile view -->
       <div class="lg:hidden flex flex-1 justify-end items-center">
-        <NavBarMobile client:load/>
+        <!-- <NavBarMobile client:load/> -->
       </div>
     </div>
   </nav>

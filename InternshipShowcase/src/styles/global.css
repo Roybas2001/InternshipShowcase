@@ -151,6 +151,16 @@
   );
 }
 
+.null-dark-gradient {
+  background: "#FFFFFF";
+  background: linear-gradient(-90.13deg, #050816 1.9%, rgba(0, 0, 0, 0) 97.5%);
+  background: -webkit-linear-gradient(
+    90.13deg,
+    #050816 1.9%,
+    rgba(0, 0, 0, 0) 97.5%
+  );
+}
+
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
