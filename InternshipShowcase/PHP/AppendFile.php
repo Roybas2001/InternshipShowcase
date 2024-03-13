@@ -23,10 +23,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subtitle = $_POST["subtitle"];
 
     // Format the data
-    $data = "{id: " . "'" . $id . "'" . ", title: " . "'" . $title . "'" . ", subtitle: " . "'" . $subtitle . "'" . ", },\n";
+    $data = array(
+        "id" => $id,
+        "title" => $title,
+        "subtitle" => $subtitle
+    );
+
+    $json_data = json_encode($data) . ",\n";
 
     // Append the data to the file
-    appendToFile($data);
+    appendToFile($json_data);
 
     // send response
     echo "Data appended successfully";
