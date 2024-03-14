@@ -2,6 +2,7 @@ import { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "../../utils/maath";
+import { getRandomHexColorCode } from "../../utils/getRandomHexColorCode";
 
 const Stars = (props) => {
   const ref = useRef();
@@ -17,7 +18,7 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#fff"
+          color={getRandomHexColorCode()}
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
