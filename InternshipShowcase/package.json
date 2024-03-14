@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "start:both": "npm run dev & cd PHP && php -S localhost:8081"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.6",
