@@ -8,11 +8,6 @@ import "../styles/global.css";
     class="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10"
   >
     <div class="w-full flex flex-row justify-between">
-      <!-- <div class="flex flex-col justify-center items-center mt-5">
-        <div class="w-5 h-5 rounded-full bg-primary"></div>
-        <div class="w-1 sm:h-80 h-40 red-gradient"></div>
-      </div> -->
-
       <!-- Replace with 3D model Text -->
       <div>
         <h1
@@ -21,32 +16,15 @@ import "../styles/global.css";
           Internship <span class="text-red-gradient">WebElephant</span>
         </h1>
       </div>
-
-      <!-- <div class="flex flex-col justify-center items-center mt-5">
-        <div class="w-5 h-5 rounded-full bg-primary"></div>
-        <div class="w-1 sm:h-80 h-40 red-gradient"></div>
-      </div> -->
     </div>
   </div>
 
   <!-- Import 3D Model -->
   <ElephantCanvas client:load />
-  <div
-    class="glow glow-white w-[50rem] h-[55rem] top-0 right-56 opacity-20 z-index-10 rounded-full"
-  >
+  <div class="flex justify-center items-center">
+    <div
+      class="glow glow-white w-[50rem] h-[55rem] top-0 right-56 opacity-20 z-index-10 rounded-full"
+    >
+    </div>
   </div>
 </section>
-<style>
-  .glow {
-    position: absolute;
-    filter: blur(120px);
-  }
-
-  .glow-white {
-    background-color: white;
-  }
-
-  .z-index-10 {
-    z-index: -10;
-  }
-</style>
