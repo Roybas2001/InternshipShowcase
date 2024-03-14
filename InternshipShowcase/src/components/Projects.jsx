@@ -46,7 +46,7 @@ const CreateProject = () => {
   }, []);
 
   return (
-    <div className="xl:mt-12 flex-row flex gap-10">
+    <div className="xl:mt-12 grid grid-cols-2 gap-10">
       {projects.map((project, index) => (
         <Project key={`project-${index}`} project={project} {...project} />
       ))}
