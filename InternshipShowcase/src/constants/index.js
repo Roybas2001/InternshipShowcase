@@ -28,18 +28,3 @@ export const footerLinks = [
     icon_link: 'https://www.webelephant.nl/',
   },
 ];
-
-export const projects = [
-  {
-    id: 'pixelmatchwe',
-    title: 'PixelmatchWE',
-    subtitle: 'Comparing images',
-    post_link: '/posts/ENDocsPixelmatchWE/',
-  },
-  {
-    id: "cypress",
-    title: "Cypress",
-    subtitle: "E2E Testing",
-    post_link: "/posts/CypressDocs/",
-  },
-];
