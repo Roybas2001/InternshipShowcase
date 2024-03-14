@@ -1,22 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import {Hero, About, Projects} from "../components";
+import { Hero, About, Projects } from "../components";
 import { StarCanvas } from "../components/canvas";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="max-w-7xl mx-auto relative z-0 sm:px-16 px-6 sm:py-16 py-10">
-    <Hero />
+  <main>
+    <div class="max-w-7xl mx-auto relative z-0 sm:px-16 px-6 sm:py-16 py-10">
+      <Hero />
+    </div>
     <div class="relative z-0">
       <About />
-      <StarCanvas client:load/>
+      <StarCanvas client:load />
     </div>
-    <Projects />
+    <div class="max-w-7xl mx-auto relative z-0 sm:px-16 px-6 sm:py-16 py-10">
+      <Projects />
+    </div>
   </main>
 </Layout>
+
 <style>
   main {
-    margin: 0px, calc(100% * 0.20);
+    margin: 0px, calc(100% * 0.2);
   }
 </style>
