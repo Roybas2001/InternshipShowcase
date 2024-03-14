@@ -21,12 +21,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST["id"];
     $title = $_POST["title"];
     $subtitle = $_POST["subtitle"];
+    $filename = $_POST["filename"];
+
+    // File upload
+    $file = $_FILES["file"];
+    $targetDirectory = "../src/pages/posts/";
+
+    // Modify the target file path to include "Docs" prefix
+    // and the filename from the form input
+    $targetFile = $targetDirectory . "Docs" . $filename . ".md";
+
+    // Move the uploaded file to the target directory with the modified filename
+    move_uploaded_file($file["tmp_name"], $targetFile);
 
     // Format the data
     $data = array(
         "id" => $id,
         "title" => $title,
-        "subtitle" => $subtitle
+        "subtitle" => $subtitle,
+        "filename" => "Docs" . $filename
     );
 
     $json_data = json_encode($data) . ",\n";

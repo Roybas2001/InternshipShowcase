@@ -7,6 +7,8 @@ const FileUpload = () => {
     id: "",
     title: "",
     subtitle: "",
+    filename: "",
+    file: null,
   });
 
   const [loading, setLoading] = useState(false);
@@ -18,29 +20,61 @@ const FileUpload = () => {
     setFormInput({ ...formInput, [name]: value });
   };
 
-  // TODO: Generate new object in constants/index.js with the given values
-  // TODO: Upload the given MD file to pages/posts/~uploaded file~
-  /**
-   *
-   * @param {Event} e
-   */
-  const handleSubmit = async (e) => {  
-    const form = $(e.target);
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setFormInput({ ...formInput, file: file });
+  };
+
+  // /**
+  //  *
+  //  * @param {Event} e
+  //  */
+  // const handleSubmit = async (e) => {
+  //   const form = $(e.target);
+
+  //   try {
+  //     e.preventDefault();
+  //     $.ajax({
+  //       type: "POST",
+  //       url: form.attr("action"),
+  //       data: form.serialize(),
+  //       success(data) {
+  //         setResult(data);
+  //         setLoading(false);
+  //       },
+  //     });
+
+  //     if (result !== "") {
+  //       setLoading(true);
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     setLoading(false);
+  //   }
+  // };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("id", formInput.id);
+    formData.append("title", formInput.title);
+    formData.append("subtitle", formInput.subtitle);
+    formData.append("filename", formInput.filename);
+    formData.append("file", formInput.file);
 
     try {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: form.attr("action"),
-            data: form.serialize(),
-            success(data) {
-                setResult(data);
-                setLoading(false);
-            }
-        });
+      setLoading(true);
+      const response = await fetch("http://localhost:8081/AppendFile.php", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.text();
+      setResult(data);
     } catch (error) {
-        console.error(error);
-        setLoading(false);
+      console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -100,11 +134,29 @@ const FileUpload = () => {
             />
           </label>
 
-          {/* File Upload
+          {/* FILE NAME */}
+          <label htmlFor="filename" className="flex flex-col">
+            <span className="text-white font-medium mb-4">Filename:</span>
+            <input
+              type="text"
+              name="filename"
+              value={formInput.filename}
+              onChange={handleChange}
+              placeholder="Give it an unique filename"
+              className="py-4 px-6 placeholder:text-secundary text-white rounded-lg outlined-none border-none font-medium"
+            />
+          </label>
+
+          {/* File Upload */}
           <label htmlFor="file" className="flex flex-col">
             <span className="text-white font-medium mb-4">File:</span>
-            <input type="file" name="file" className="py-4 px-6 rounded-lg outlined-none border-none" />
-          </label> */}
+            <input
+              type="file"
+              name="file"
+              onChange={handleFileChange}
+              className="py-4 px-6 rounded-lg outlined-none border-none"
+            />
+          </label>
 
           {/* Post_Link Auto generate? */}
 
