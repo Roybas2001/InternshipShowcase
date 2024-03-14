@@ -1,2 +1,3 @@
+{"id":"readme","title":"ReadME","subtitle":"General Info","filename":"DocsReadME"},
 {"id":"pixelmatchwe","title":"PixelmatchWE","subtitle":"Image Comparing","filename":"DocsPixelmatchWE"},
 {"id":"cypress","title":"Cypress","subtitle":"E2E Testing","filename":"DocsCypress"},

@@ -156,9 +156,9 @@
       "name": "Mat_Elephant_Body",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          1,
+          1.0,
           0.0,
-          0.0,
+          0.022,
           1.0
         ],
         "metallicFactor": 0.0,
