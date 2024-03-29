@@ -25,34 +25,6 @@ const FileUpload = () => {
     setFormInput({ ...formInput, file: file });
   };
 
-  // /**
-  //  *
-  //  * @param {Event} e
-  //  */
-  // const handleSubmit = async (e) => {
-  //   const form = $(e.target);
-
-  //   try {
-  //     e.preventDefault();
-  //     $.ajax({
-  //       type: "POST",
-  //       url: form.attr("action"),
-  //       data: form.serialize(),
-  //       success(data) {
-  //         setResult(data);
-  //         setLoading(false);
-  //       },
-  //     });
-
-  //     if (result !== "") {
-  //       setLoading(true);
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     setLoading(false);
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
