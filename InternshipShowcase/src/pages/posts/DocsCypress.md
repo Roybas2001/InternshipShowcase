@@ -67,10 +67,10 @@ Now that we have the basics set up we can dive in the config file of cypress and
 ```js
 module.exports = defineConfig({
     defaultCommandTimeout: 10000,
-    expirimentalMemoryManagement: true,
+    experimentalMemoryManagement: true,
     numTestsKeptInMemory: 0,
     e2e: {
-        experimentalstudio: true,
+        experimentalStudio: true,
         viewportHeight: 794,
         viewportWidth: 1440,
     }
