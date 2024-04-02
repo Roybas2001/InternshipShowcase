@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MDlayout.astro
+layout: ../../layouts/MDLayout.astro
 title: 'Cypress Admin Panel Interaction Docs'
 subtitle: 'Cypress Admin Interaction'
 ---

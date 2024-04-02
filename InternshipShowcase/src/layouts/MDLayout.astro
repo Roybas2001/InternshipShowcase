@@ -22,7 +22,7 @@ const { frontmatter, url } = Astro.props;
     <title>{frontmatter.title}</title>
   </head>
   <body>
-    <header><NavBar /></header>
+    <header class="z-[999] relative"><NavBar /></header>
     <main>
       <div class="xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
         <div class="flex-[1] dark-null-gradient p-8">

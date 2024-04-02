@@ -130,8 +130,6 @@ const FileUpload = () => {
             />
           </label>
 
-          {/* Post_Link Auto generate? */}
-
           {/* Submit */}
           <button
             type="submit"

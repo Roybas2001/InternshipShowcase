@@ -12,6 +12,11 @@ export const navLinks = [
       title: "Projects",
       post_link: "#projects",
     },
+    {
+      id: "cypress",
+      title: "Cypress",
+      post_link: "#cypressscripts",
+    },
   ];
 
 export const footerLinks = [

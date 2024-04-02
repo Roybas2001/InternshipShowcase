@@ -1,7 +1,7 @@
 import { useState } from "react";
-import menu from "../assets/menu.svg";
-import close from "../assets/close.svg";
-import { navLinks } from "../constants";
+import menu from "../../assets/menu.svg";
+import close from "../../assets/close.svg";
+import { navLinks } from "../../constants";
 
 const NavBarMobile = () => {
     const [active, setActive] = useState("");

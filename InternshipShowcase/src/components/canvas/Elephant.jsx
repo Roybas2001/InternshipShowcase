@@ -2,7 +2,7 @@ import { Suspense, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
-import CanvasLoader from '../Loader';
+import CanvasLoader from '../jsxComponents/Loader';
 
 const Elephant = (isMobile) => {
     const elephant = useGLTF('./low_poly_elephant/scene.gltf');
