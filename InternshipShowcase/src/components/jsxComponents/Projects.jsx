@@ -33,7 +33,6 @@ const CreateProject = () => {
         url: "http://localhost:8081/ReadProjects.php",
         success(data) {
           const parsedData = JSON.parse(data);
-          console.log("Parsed Data: ", parsedData);
           setProjects(parsedData);
         },
         error(xhr, status, error) {
