@@ -73,7 +73,6 @@ const CypressForm = () => {
             {loading ? "Starting The Test..." : "Start The Test"}
           </button>
         </form>
-
         <div className="xl:mt-12" dangerouslySetInnerHTML={{ __html: result }} />
       </div>
     </div>

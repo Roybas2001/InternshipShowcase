@@ -1,6 +1,5 @@
 import NavBar from "./NavBar.astro";
 import Hero from "./Hero.astro";
-import NavBarMobile from "./jsxComponents/MobileNav";
 import Footer from "./Footer.astro";
 import About from "./About.astro";
 import Projects from "./Projects.astro";
@@ -9,4 +8,4 @@ import CreateProject from "./jsxComponents/Projects.jsx";
 import Cypress from "./Cypress.astro";
 import { CypressForm } from "./jsxComponents/Cypress.jsx";
 
-export { NavBar, Hero, NavBarMobile, Footer, About, Projects, FileUploadMD, CreateProject, Cypress, CypressForm };
+export { NavBar, Hero, Footer, About, Projects, FileUploadMD, CreateProject, Cypress, CypressForm };

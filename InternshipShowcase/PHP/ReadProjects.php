@@ -33,9 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $line_arr = readFileToArray();
 
     // Send Data to front-end
-    $data = json_encode($line_arr);
-
-    echo $data;
+    echo json_encode($line_arr);
 } else {
     http_response_code(405);
     echo "Method Not Allowed";
