@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { FileUploadMD } from "../components";
+---
+
+<Layout title="Upload MD files">
+    <main class="max-w-7xl mx-auto relative z-0 sm:px-16 px-6 sm:py-16 py-10">
+        <FileUploadMD client:load/>
+    </main>
+</Layout>
+<style>
+    main {
+      margin: 0px, calc(100% * 0.20);
+    }
+</style>
